@@ -1,0 +1,117 @@
+navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 0px;
+    background-color: transparent;
+    z-index: 1;
+
+
+
+    .nav-left {
+        img {
+            padding: 0;
+            width: 120px;
+            align-items: start;
+            height: 90px;
+            object-fit: contain;
+
+        }
+
+    }
+
+    .nav-center {
+        display: flex;
+        list-style: none;
+        gap: 50px;
+        align-items: center;
+
+
+
+        .home:hover,
+        .about:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: 0.3s;
+            text-decoration: solid;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+
+        .search {
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            border-radius: 40px;
+            padding: 10px;
+            width: 350px;
+
+            input {
+                border: none;
+                width: 100%;
+                background: transparent;
+            }
+
+            input:focus {
+                outline: none;
+            }
+
+
+            svg:hover {
+                cursor: pointer;
+
+            }
+        }
+    }
+
+    .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        font-size: 16px;
+        font-weight: 500;
+
+
+        svg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        svg:hover {
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+
+
+        nav-auth {
+            display: flex;
+
+            .login,
+            .signup,
+            span {
+                padding: 5px;
+            }
+
+            .login:hover,
+            .signup:hover {
+                cursor: pointer;
+                // transform: scale(1.1);
+                color: white;
+                transition: 0.3s;
+            }
+        }
+    }
+}
