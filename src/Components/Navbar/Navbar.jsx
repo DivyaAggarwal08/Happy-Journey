@@ -16,9 +16,12 @@ const Navbar = () => {
                 <img src={Logo_hp} alt="" />
             </div>
             <ul className='nav-center'>
-                <li className='home'><Link to="/" > Home</Link></li>
-                <li className='about'><Link to="/about" > About</Link></li>
-                <li className='search'>
+                <li className='nav-home'><Link to="/" > Home</Link></li>
+                <li className='nav-about'><Link to="/about" >
+                    About</Link></li>
+                <li className='nav-package'><Link to="/packages">
+                    Packages</Link></li>
+                <li className='nav-search'>
                     <input type="text" />
                     <FiSearch />
                 </li>
@@ -32,7 +35,7 @@ const Navbar = () => {
 
                 <MdOutlineDarkMode />
             </div>
-        </navbar>
+        </navbar >
     </>
     )
 }

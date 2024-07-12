@@ -1,0 +1,49 @@
+.home-package {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    justify-content: space-between;
+    height: 450px;
+
+
+
+    image {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+
+        img {
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+
+            width: 100%;
+        }
+    }
+
+    .home-package-description {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .home-package-star {
+        text-align: center;
+        color: gold;
+        font-size: 26px;
+    }
+}
+
+.home-package:hover {
+    cursor: pointer;
+
+    image {
+        overflow: hidden;
+
+        img {
+            transform: scale(1.1);
+            transition: all 0.3s;
+
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.gallery {
+    display: flex;
+
+    padding: 80px;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+
+    flex-direction: column;
+
+    .gallery-image-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        svg {
+            color: rgb(151, 151, 151);
+            font-size: 35px;
+        }
+
+        svg:hover {
+            cursor: pointer;
+            color: black;
+            transition: all 0.3s;
+        }
+
+        image {
+            width: 40%;
+            text-align: center;
+            padding-inline: 45px;
+            width: 80%;
+            overflow: hidden;
+
+            img {
+                height: 500px;
+                width: 100%;
+                object-fit: contain;
+                object-fit: cover;
+
+            }
+
+
+
+
+        }
+    }
+
+    p {
+        width: 60%;
+        padding-inline: 45px;
+    }
+}
