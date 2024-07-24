@@ -1,0 +1,113 @@
+.footer {
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 60px;
+
+
+        .footer-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .footer-item {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                font-size: 16px;
+
+                .footer-icon {
+                    height: 20px;
+                    width: 20px;
+                }
+
+                .footer-icon:hover {
+                    transform: scale(1.1);
+                    transition: 0.3s;
+
+                }
+
+            }
+
+        }
+
+        .footer-center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            list-style: none;
+            // font-size: 18px;
+            font-weight: 600;
+
+            a {
+                text-decoration: none;
+                color: black;
+
+
+            }
+
+            .footer-home:hover,
+            .footer-package:hover {
+                transform: scale(1.1);
+                transition: 0.3s;
+
+            }
+        }
+
+        .footer-right {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-weight: 600;
+            gap: 10px;
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            .login,
+            .signup,
+            span {
+                padding: 5px;
+            }
+
+            .login:hover,
+            .signup:hover {
+                cursor: pointer;
+                text-decoration: underline;
+                transition: 0.3s;
+
+            }
+
+        }
+
+
+    }
+
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 60px;
+        padding-right: 60px;
+        font-size: 14px;
+
+        .footer-bottom-right {
+            display: flex;
+            gap: 50px;
+
+            a {
+                color: black;
+                text-decoration: none;
+            }
+
+            a:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+    }
+}

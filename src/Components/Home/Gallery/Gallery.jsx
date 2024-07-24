@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './Gallery.scss'
 
 import image1 from '../../../assests/image1.avif';
@@ -10,21 +10,62 @@ import { SlArrowRight, SlArrowLeft } from "react-icons/sl";
 import { GoDot, GoDotFill } from "react-icons/go";
 
 const Gallery = () => {
+
+    const galleryTextArray = ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolores enim, cum officia ipsam tempora vero porro iure sed id!Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolores enim, cum officia ipsam tempora vero porro iure sed id!Lorem ipsum dolor sit amet consectetur adipisicing elit. !", "Rahul", "Pushkar", "Shivaay"]
+    const galleryIconsArray = [GoDot, GoDot, GoDot, GoDot];
+
+    const imagesArr = [image1, image2, image3, image4];
+    const [galleryImage, setGalleryImage] = useState(imagesArr[0]);
+    const [galleryText, setGalleryText] = useState(galleryTextArray[0]);
+    const [galleryImageIndex, setGalleryImageIndex] = useState(0);
+    const [galleryIcon, setGalleryIcon] = useState(galleryIconsArray);
+
+    console.log(galleryIcon)
+
+    const goNext = () => {
+        let newIndex = galleryImageIndex + 1;
+        if (newIndex >= imagesArr.length) {
+            newIndex = 0;
+        }
+        setGalleryImageIndex(newIndex);
+        setGalleryImage(imagesArr[newIndex]);
+        setGalleryText(galleryTextArray[newIndex]);
+        galleryIconsArray[newIndex] = GoDotFill;
+        setGalleryIcon(galleryIconsArray)
+    }
+
+    const goBack = () => {
+        let newIndex = galleryImageIndex - 1;
+        if (newIndex < 0) {
+            newIndex = imagesArr.length - 1;
+        }
+        setGalleryImageIndex(newIndex);
+        setGalleryImage(imagesArr[newIndex]);
+        setGalleryText(galleryTextArray[newIndex]);
+        galleryIconsArray[newIndex] = GoDotFill;
+        setGalleryIcon(galleryIconsArray)
+    }
+
+    useEffect(() => {
+        const interval = setInterval(goNext, 5000);
+        return () => clearInterval(interval); // Cleanup the interval on component unmount
+    }, [galleryImageIndex]);
+
     return (
         <div className='gallery'>
             <div className='gallery-image-container'>
-                <SlArrowLeft />
+                <SlArrowLeft onClick={() => { goBack() }} />
                 <image >
-                    <img src={image1} alt="" />
+                    <img src={galleryImage} alt="" />
                 </image>
-                <SlArrowRight />
+                <SlArrowRight onClick={() => { goNext() }} />
             </div>
-            <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere nulla, provident corrupti nemo illo sapiente debitis ipsum sit pariatur ipsam possimus fugiat id nesciunt quo laborum reprehenderit, quod perspiciatis voluptates in nobis doloremque? Dolore.</p>
+
+            <p >{galleryText}</p>
             <div className="gallery-image-shift-icons">
-                <GoDotFill />
-                <GoDot />
-                <GoDot />
-                <GoDot />
+                {galleryIcon.map((DotIcon, i) => (
+                    <span key={i}>{<DotIcon />}</span>
+                ))}
             </div>
         </div>
     )

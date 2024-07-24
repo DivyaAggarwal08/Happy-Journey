@@ -1,0 +1,90 @@
+.newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    background-color: #baccd9;
+
+    .newsletter-left {
+
+        .newsletter-left-top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 150px;
+                height: 150px;
+            }
+
+            p {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-weight: 900;
+
+            }
+        }
+
+        .newsletter-left-description {
+            text-align: center;
+            font-style: 'cursive';
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+
+    .newsletter-right {
+        .newsletter-right-description {
+            p {
+                text-align: center;
+                font-size: 20px;
+                font-weight: 520;
+            }
+
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            label {
+                font-size: 20px;
+            }
+
+            input {
+                width: 400px;
+                padding: 5px 10px;
+                border-radius: 10px;
+                border: none;
+            }
+
+            input:focus {
+                outline: none;
+            }
+
+            button {
+                padding: 10px 30px;
+                background-color: cadetblue;
+                color: white;
+                border: none;
+                border-radius: 40px;
+
+            }
+
+            button:hover {
+                color: cadetblue;
+                background-color: white;
+                transition: 0.3s;
+                cursor: pointer;
+            }
+        }
+    }
+
+
+}

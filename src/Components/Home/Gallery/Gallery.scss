@@ -4,7 +4,7 @@
     padding: 80px;
     justify-content: center;
     align-items: center;
-    height: 550px;
+    height: 650px;
 
     flex-direction: column;
 
@@ -50,5 +50,10 @@
     p {
         width: 60%;
         padding-inline: 45px;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }

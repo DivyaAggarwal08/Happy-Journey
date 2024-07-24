@@ -1,0 +1,39 @@
+.packages-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .packages-filter-price-filter {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .packages-filter-form-container {
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .packages-filter-form-section {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .packages-filter-form-section-min-max {
+                    .packages-filter-form-section-max {
+                        transform: rotate(180deg);
+                        position: relative;
+                        left: 0;
+                    }
+                }
+            }
+
+            .range-filter {
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+        }
+    }
+}

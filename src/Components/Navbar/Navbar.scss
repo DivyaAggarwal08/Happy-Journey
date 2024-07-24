@@ -49,6 +49,7 @@ navbar {
             border-radius: 40px;
             padding: 10px;
             width: 350px;
+            gap: 5px;
 
             input {
                 border: none;
@@ -64,6 +65,18 @@ navbar {
             svg:hover {
                 cursor: pointer;
 
+            }
+
+            .speakNowIcon {
+                background-color: red;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                display: none;
+            }
+
+            .speakNowIconActive {
+                display: block;
             }
         }
     }

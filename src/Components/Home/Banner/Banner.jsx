@@ -4,13 +4,11 @@ import './Banner.scss'
 
 import banner_img from '../../../assests/banner_img.avif'
 import nav_banner from '../../../assests/nav_banner.avif'
-import Navbar from '../../Navbar/Navbar'
 
 
 const Banner = () => {
     return (
         <div className='banner'>
-            <Navbar />
             <image>
                 <img src={nav_banner} alt="" />
 
