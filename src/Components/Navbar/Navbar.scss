@@ -110,14 +110,18 @@ navbar {
             .signup,
             span {
                 padding: 5px;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
             }
 
             .login:hover,
             .signup:hover {
                 cursor: pointer;
-                // transform: scale(1.1);
-                color: white;
                 transition: 0.3s;
+                text-decoration: underline;
             }
         }
     }

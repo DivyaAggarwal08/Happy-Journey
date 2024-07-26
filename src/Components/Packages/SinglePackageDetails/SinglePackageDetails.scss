@@ -1,0 +1,73 @@
+.single-package-details-container {
+    .single-package-details-description-box {
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+
+        .single-package-details-description-box-image {
+            width: 40%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .single-package-details-description-box-details {
+            width: 60%;
+            min-height: 400px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .single-package-details-description-box-details-price-offer {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+
+                .single-package-details-description-box-details-price {
+                    font-size: 18px;
+                    font-weight: 530;
+
+                }
+
+                .single-package-details-description-box-details-offers {
+
+
+                    h4 {
+
+                        margin-block: 0;
+                    }
+                }
+
+                .single-package-details-description-box-details-bookNow {
+                    width: 30%;
+                    margin: 0 auto;
+                    padding: 5px 0;
+                    font-size: 20px;
+                    background-color: #b5d4e7;
+                    padding: 10px 20px;
+                    width: 200px;
+                    border-radius: 40px;
+                    border: 1px solid white;
+                }
+
+                .single-package-details-description-box-details-bookNow:hover {
+                    cursor: pointer;
+                    color: white;
+                    background: linear-gradient(to right, #81afcc, #1b84b1);
+                    transition: all 0.3s;
+
+                }
+            }
+        }
+    }
+
+    .single-package-details-relevant-packages {
+        h3 {
+            padding-inline: 70px;
+            font-size: 24px;
+        }
+    }
+}

@@ -73,9 +73,9 @@ const Navbar = () => {
             </ul>
             <div className="nav-right">
                 <nav-auth>
-                    <div className="login">Login</div>
+                    <div className="login"><Link to='/login' >Login</Link></div>
                     <span>/</span>
-                    <div className="signup">Sign up</div>
+                    <div className="signup"><Link to='/signup'>Sign up</Link></div>
                 </nav-auth>
 
                 <MdOutlineDarkMode />

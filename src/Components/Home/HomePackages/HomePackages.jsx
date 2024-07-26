@@ -19,9 +19,9 @@ const HomePackages = () => {
                 <div className="home-packages-items">
 
 
-                    <Link to="/packages"><HomePackage text={text} star={3.5} /></Link>
-                    <Link to="/packages"><HomePackage text={text} star={4} /></Link>
-                    <Link to="/packages"><HomePackage text={text} star={5} /></Link>
+                    <Link to="/singlePackage/example" target='_blank'><HomePackage text={text} star={3.5} /></Link>
+                    <Link to="/singlePackage/"><HomePackage text={text} star={4} /></Link>
+                    <Link to="/singlePackage/"><HomePackage text={text} star={5} /></Link>
                 </div>
 
             </div>

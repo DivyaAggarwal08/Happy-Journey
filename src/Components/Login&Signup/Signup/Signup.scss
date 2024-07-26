@@ -1,0 +1,81 @@
+.signup-conatainer {
+    background-image: url('../../../assests/login_background.avif');
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .signup-box {
+        width: 600px;
+        padding: 40px 20px;
+        background-color: white;
+        border-radius: 10px;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+            .signup-form-section {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+
+
+
+                input {
+                    padding: 5px 15px;
+
+                }
+
+                p,
+                label {
+                    font-size: 12px;
+
+                }
+
+                label:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+
+                span:hover {
+                    color: blue;
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+
+                button {
+                    font-size: 20px;
+                    background-color: #b5d4e7;
+                    padding: 10px 20px;
+                    width: 200px;
+                    border-radius: 40px;
+                    border: 1px solid white;
+
+                }
+
+                button:hover {
+                    cursor: pointer;
+                    color: white;
+                    background: linear-gradient(to right, #81afcc, #1b84b1);
+                    transition: all 0.3s;
+
+                }
+
+            }
+
+            .signup-form-section-button {
+                flex-direction: column;
+            }
+
+
+        }
+    }
+}
