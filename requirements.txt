@@ -1,3 +1,9 @@
 React
 react-router-dom
 react-icons
+axios
+sass
+express
+react-speech-recognition
+react-dom
+nodemon

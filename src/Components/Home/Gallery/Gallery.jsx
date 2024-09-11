@@ -20,8 +20,6 @@ const Gallery = () => {
     const [galleryImageIndex, setGalleryImageIndex] = useState(0);
     const [galleryIcon, setGalleryIcon] = useState(galleryIconsArray);
 
-    console.log(galleryIcon)
-
     const goNext = () => {
         let newIndex = galleryImageIndex + 1;
         if (newIndex >= imagesArr.length) {
